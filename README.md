@@ -110,6 +110,17 @@ in the web browser:
 
  ![Preview](Images/ConsoleLog.JPG)
 
+Besides `console.log` there are other categories of output:
+
+   ```
+    console.log('A log message');
+    console.warn('A warning message');
+    console.info('An information');
+    console.error('An error message');
+   ```
+
+All functions can be used like `console.log`, only the output in the web console usually changes style.
+
 It is also possible to start the JavaScript code directly from the runtime environment, but for this [Node.js](https://nodejs.org) must be installed on the computer. After installing it you can start the code with **node** (in Visual Studio Code: Run -> Start Debugging -> select "node.js").
 
  ![Preview](Images/DebugConsoleNode.JPG)
@@ -164,3 +175,31 @@ A multi-line comment:
 -------------------------------------------
 
 # 3. The use of variables in JavaScript
+Variables are declared in JavaScript using either the `let` or `var` keyword, the variable name is followed by a `=` character and the value.
+Such variable initialization is done as in algebra:
+
+   ```
+    let price = 10;                     // Number
+    let pi = 3.14;                      // Number
+    let aMessage = "Message";           // String
+    let userName = 'Rick Sample';       // String
+    let num = 12345;                    // Number
+   ```
+
+The variable name must not have any spaces or special characters and must start with a letter. The underscore `_` can be used as the last character, the `$` is theoretically allowed at the beginning or within the name. There is also a distinction between upper and lower case (`var1` and `Var1` are two different variable names).
+
+JavaScript keywords also cannot be used as variable names, these are:
+
+| Reserved keywords in JavaScript                       |
+| ----------------------------------------------------- |
+| async     | do            | in            | super     |
+| await     | else          | interface     | switch    |
+| break     | enum          | instanceof    | this      |
+| case      | export        | let           | throw     |
+| class     | extends       | new           | try       |
+| catch     | finally       | package       | typeof    |
+| const     | for           | private       | var       |
+| continue  | function      | protected     | void      |
+| debugger  | if            | public        | while     |
+| default   | implements    | return        | with      |
+| delete    | import        | static        | yield     |
