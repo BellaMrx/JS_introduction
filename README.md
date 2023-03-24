@@ -188,6 +188,8 @@ Such variable initialization is done as in algebra:
 
 The variable name must not have any spaces or special characters and must start with a letter. The underscore `_` can be used as the last character, the `$` is theoretically allowed at the beginning or within the name. There is also a distinction between upper and lower case (`var1` and `Var1` are two different variable names).
 
+A statement is always terminated with a semicolon `;`. An instruction in JavaScript is almost every line of a script. Consequently, statements are also the declaration and initialization of variables or the calling of functions.
+
 JavaScript keywords also cannot be used as variable names, these are:
 
 Reserved keywords in JavaScript 
@@ -203,4 +205,65 @@ Reserved keywords in JavaScript
 | debugger  | if            | public        | while     |
 | default   | implements    | return        | with      |
 | delete    | import        | static        | yield     |
+
+Everything between the single or double apostrophes is recognized as a string by the interpreter:
+   ```
+    let aText01 = "This is a string";           // String
+    let aText02 = 'This is a string';           // String
+   ```
+
+Without single or double quotation marks, it is a numeric value:
+   ```
+    let price = 10;                     // Number
+    let pi = 3.14;                      // Number
+    let textNum = "1234";                    // Caution! This is a string
+   ```
+
+### Initalize and assign values
+- create a variable with the keyword `let`
+   ```
+    let myName;             // agreement of a variable
+    console.log(myName);    // Output: undefined                 
+   ```
+
+- Such an empty agreed variable without an assigned value has a value, this is `undefined`. With the assignment operator a value can be assigned again at any time:
+   ```
+    let myName;             
+    myName = "Sample";      // Value assignment
+    console.log(myName);    // Output: Sample                 
+   ```
+
+- or the value can be added immediately:
+   ```
+    let myName = "Sample";            
+    console.log(myName);    // Output: Sample                 
+   ```
+
+- Likewise, more than one variable can be declared at once, in one statement, separated by commas:
+   ```
+    let firstName, lastName, myAge;                           
+   ```
+
+- the initialization of several variables:
+   ```
+    let firstName = "Sample", lastName = "Rick", myAge = 42;
+    console.log (firstName + "," + lastName + "," + myAge);     // Output: Rick, Sample, 42                          
+   ```
+
+- Variables can also be assigned a new/different value:
+   ```
+    let firstName = "Rick";
+    console.log(firstName);    // Output: Rick    
+    firstName = "Richard";
+    console.log(firstName);    // Output: Richard                      
+   ```
+
+## Define constants
+
+
+
+
+
+
+
 
