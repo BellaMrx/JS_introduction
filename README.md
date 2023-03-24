@@ -192,8 +192,6 @@ JavaScript keywords also cannot be used as variable names, these are:
 
 Reserved keywords in JavaScript 
 
-|   |   |   |
-| --------- | ------------- | ------------- | --------- |
 | async     | do            | in            | super     |
 | await     | else          | interface     | switch    |
 | break     | enum          | instanceof    | this      |
