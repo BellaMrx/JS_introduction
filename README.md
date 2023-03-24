@@ -192,8 +192,6 @@ A statement is always terminated with a semicolon `;`. An instruction in JavaScr
 
 JavaScript keywords also cannot be used as variable names, these are:
 
-Reserved keywords in JavaScript 
-
  ![Preview](Images/ReservedJSKeys.png)
 
 Everything between the single or double apostrophes is recognized as a string by the interpreter:
