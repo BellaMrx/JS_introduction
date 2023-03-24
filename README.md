@@ -194,17 +194,7 @@ JavaScript keywords also cannot be used as variable names, these are:
 
 Reserved keywords in JavaScript 
 
-| async     | do            | in            | super     |
-| await     | else          | interface     | switch    |
-| break     | enum          | instanceof    | this      |
-| case      | export        | let           | throw     |
-| class     | extends       | new           | try       |
-| catch     | finally       | package       | typeof    |
-| const     | for           | private       | var       |
-| continue  | function      | protected     | void      |
-| debugger  | if            | public        | while     |
-| default   | implements    | return        | with      |
-| delete    | import        | static        | yield     |
+ ![Preview](Images/ReservedJSKeys.png)
 
 Everything between the single or double apostrophes is recognized as a string by the interpreter:
    ```
