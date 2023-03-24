@@ -8,6 +8,7 @@
  1. `async` and `defer` - attributes to control the loading behavior of JavaScript
  2. Output from JavaScript
  3. The use of variables in JavaScript
+ 4. Overview of JavaScript data types
 
 
 ---------------------------------------------
@@ -207,7 +208,7 @@ Without single or double quotation marks, it is a numeric value:
     let textNum = "1234";                    // Caution! This is a string
    ```
 
-### Initalize and assign values
+## Initalize and assign values
 - create a variable with the keyword `let`
    ```
     let myName;             // agreement of a variable
@@ -246,7 +247,7 @@ Without single or double quotation marks, it is a numeric value:
     console.log(firstName);    // Output: Richard                      
    ```
 
-### Define constants
+## Define constants
 JavaScript can also be used to define constants, for which the keyword `const` is available. The value of such a constant cannot be changed after initialization. In practice, such constants are usually rendered with capital letters:
    ```
     const PI = 3.141592653589793;       // create constant 
@@ -272,7 +273,10 @@ Example:
     console.log(text);      // ReferenceError: text ist not defined
    ```
 
-## Overview of JavaScript data types
+
+--------------------------------------------
+
+# 4. Overview of JavaScript data types
 
 
 
