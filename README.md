@@ -191,8 +191,7 @@ The variable name must not have any spaces or special characters and must start 
 JavaScript keywords also cannot be used as variable names, these are:
 
 | Reserved keywords in JavaScript                       |
-
-| ----------------------------------------------------- |
+| --------- | ------------- | ------------- | --------- |
 | async     | do            | in            | super     |
 | await     | else          | interface     | switch    |
 | break     | enum          | instanceof    | this      |
@@ -204,4 +203,4 @@ JavaScript keywords also cannot be used as variable names, these are:
 | debugger  | if            | public        | while     |
 | default   | implements    | return        | with      |
 | delete    | import        | static        | yield     |
-| ----------------------------------------------------- |
+
