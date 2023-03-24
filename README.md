@@ -246,7 +246,35 @@ Without single or double quotation marks, it is a numeric value:
     console.log(firstName);    // Output: Richard                      
    ```
 
-## Define constants
+### Define constants
+JavaScript can also be used to define constants, for which the keyword `const` is available. The value of such a constant cannot be changed after initialization. In practice, such constants are usually rendered with capital letters:
+   ```
+    const PI = 3.141592653589793;       // create constant 
+    console.log(PI);                    // Output: 3.141592653589793
+    PI = 3.14;                          // Error! Constant can no longer be changed.  
+    console.log(PI);                    // Uncaught TypeError: Assignment to constant variable
+   ```
+
+### `use strict` - strict mode
+JavaScript is executed in Standard mode without any precaution. In strict mode some constructs can cause errors that are executable in standard mode without any problem, because there are some restrictions in strict mode. This sounds bad at first, but since JavaScript is very fault tolerant, the website may work locally, but as soon as the website is hosted, errors may occur. And that's where the `use strict` mode is helpful, because it doesn't allow these errors from the beginning.
+
+To enable strict mode, it is enough to write this statement at the beginning of the JavaScript program:
+   ```
+    "use strict";
+
+    // JS code
+   ```
+
+Example:
+   ```
+    "use strict";
+    text = "A Message";     // strict mode error
+    console.log(text);      // ReferenceError: text ist not defined
+   ```
+
+## Overview of JavaScript data types
+
+
 
 
 
