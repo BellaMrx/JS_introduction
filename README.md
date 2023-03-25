@@ -122,7 +122,7 @@ Besides `console.log` there are other categories of output:
 
 All functions can be used like `console.log`, only the output in the web console usually changes style.
 
-It is also possible to start the JavaScript code directly from the runtime environment, but for this [Node.js](https://nodejs.org) must be installed on the computer. After installing it you can start the code with **node** (in Visual Studio Code: Run -> Start Debugging -> select "node.js").
+It is also possible to start the JavaScript code directly from the runtime environment, but for this [Node.js](https://nodejs.org) must be installed on the computer. After installing it you can start the code with *node* (in Visual Studio Code: Run -> Start Debugging -> select "node.js").
 
  ![Preview](Images/DebugConsoleNode.JPG)
 
@@ -277,7 +277,43 @@ Example:
 --------------------------------------------
 
 # 4. Overview of JavaScript data types
+In JavaScript, no data type needs to be specified during variable declaration, unlike other languages such as C++ or Java. Since the data type in JavaScript is determined at runtime based on the value passed.
 
+JavaScript defines several data types. 
+- The primitive types: *string*, *number*, *boolean*, *symbol*.
+- special types: *undefined*, *null*
+- composite data type: *object* 
+
+The type of a variable is returned with the *typeof* operator. Possible return values are *string*, *number*, *boolean*, *object*, *function*, *symbol* and *undefined*.
+
+
+## number -data type
+In JS, there is no difference between integers and floating point numbers. All data types for numbers are internally represented by JS as 64-bit floating point values.
+   ```
+   let integerValue = 12345;
+   console.log (typeof integerValue);              // Output: number
+   let floatingPoint_Value = 123.456;
+   console.log (typeof floatingPoint_Value);       // Output: number
+   ```
+
+If a value does not correspond to a correct numerical value, *NaN (not a number)* is used as the value. If the value range has been exceeded or fallen below, *Infinity* or *-Infinity* is used as the value. Therefore there are two constants *Number.POSITIVE_INFINITY* and *Number.NEGATIVE_INFINITY*. If the smallest or largest possible number is to be determined, the constants *Number.MIN_VALUE* and *Number.MAX_VALUE* are used.
+   ```
+   console.log (Number.MIN_VALUE);              // Output: 5e-324
+   console.log (Number.MAX_VALUE);              // Output: 1.7976931348623157e+308
+   console.log (Number.POSITIVE_INFINITY);      // Output: Infinity
+   console.log (Number.NEGATIVE_INFINITY);      // Output: -Infinity
+   ```
+
+When specifying floating point numbers, a period must be used instead of a comma. For higher or smaller floating point numbers, E-notation can be used. A specification of **5e-3** corresponds to **0.005**.
+   ```
+   let floatingPoint_Value_1 = 5e-3;
+   console.log (typeof floatingPoint_Value_1);       // Output: 0.005
+   let floatingPoint_Value_2 = 1.2e4;
+   console.log (typeof floatingPoint_Value_2);       // Output: 12000
+   ```
+
+
+## string data type
 
 
 
