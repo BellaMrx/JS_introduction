@@ -9,6 +9,8 @@
  2. Output from JavaScript
  3. The use of variables in JavaScript
  4. Overview of JavaScript data types
+ 5. Arithmetic operators for calculation
+ 6. Conditional statements
 
 
 ---------------------------------------------
@@ -381,6 +383,109 @@ the same:
     `)
    ```
 
+To insert JavaScript expressions into the strings, the notation `${expression}` is used (expression here `text11`).
+
 
 ## data type *boolean*
+The Boolean data type can hold only two values, *true* and *false*. A boolean value is a truth value and usually expresses the validity of a condition. Conditions that contain the value 0, an empty *string*, *NaN*, *undefined* or *null* are also interpreted as *false*. All other values are *true*.
+   ``` 
+    let val1 = 123;
+    let val2 = 456;
+    console.log(val1 > val2);    // Output: false
+    console.log(val1 < val2);    // Output: true
+
+    let isAdmin = false;
+    let isUser = true;
+   ```
+
+
+## Data type *undefined* and *null*
+A variable that has not yet been assigned a value has the value *undefined*. Also a non-existing object property or non-existing function parameters have the value *undefined*.
+   ``` 
+    let name;
+    console.log(name);     // Output: undefined
+    let name = "Rick Sample";
+    console.log(name);     // Output: Rick Sample    
+   ```
+
+With the data type *null*, on the other hand, an empty object is represented:
+   ``` 
+    let name = {
+      fname: 'Rick',
+      lname: 'Sample'
+    };
+    console.log(name);     // Output: {fname: "Rick", lname: "Sample"}
+    name = null;
+    console.log(name);     // Output: null
+   ```
+
+The data type *null* is a keyword. The type *null* was listed as a data type, but a *typeof null* returns the type *object*. Variables that are initalized with *null* are *object* types. A variable that is not initalized, on the other hand, is *undefined*. The value *undefined* simply indicates that a variable has not yet been initialized with a value. *null*, on the other hand, is an empty object.
+
+
+## Data type *object*
+Objects are a collection of properties and methods. A method is a function and a property, value or set of values of an object. 
+   ``` 
+    let name = {
+      fname: 'Rick',
+      lname: 'Sample'
+    };
+    console.log(name);     // Output: {fname: "Rick", lname: "Sample"}
+   ```
+
+## Convert data types
+In this example, the + operator has output the value as a string.
+   ``` 
+    let text10 = "The value is: " + 199,99 + 100;
+    console.log (text10);                       // Output: The value is 199,99100
+   ```
+
+However, this only applies to the `+` operator in conjunction with strings. If other operators like `-`, `*` or `/` are used, JavaScript does not convert the numbers into strings anymore, but tries to convert the strings into numbers.
+   ``` 
+    let text12 = "100" - 42;                    // 58
+    console.log(typeof text12);                 // Output: number
+    let text13 = "100" + 42;                    // "10042"
+    console.log(typeof text13);                 // Output: string
+    console.log("6" / "2");                     // Output: 3
+   ```
+
+JS cannot know on its own which data type is to be used.  For such purposes JS offers the function `parseInt()` and `parseFloat`. With `parseInt()` a string is converted into an integer. With `parseFloat` a string is converted into a floating point number.
+   ``` 
+    let iVal = parseInt("100") + 42;         // 142
+    console.log(typeof iVal);                // Output: number
+   ```
+
+--------------------------------------------------
+
+# 5. Arithmetic operators for calculation
+Arithmetic operators are for example `+`, `-`, `*`, `/` or `%`.
+
+   ``` 
+    let val1 = 101 + 202;
+    console.log(val1);                    // Output: 303
+    console.log(88 - 46);                 // Output: 42
+    let val2 = val1 * 3;
+    console.log(val2);                    // Output: 909
+    console.log(val2 / 9);                // Output: 101
+   ```
+
+Here, too, as in mathematics, the dot before dash rule applies.
+   ``` 
+    let val3 = 100 / 2 - 5 * 4;
+    console.log(val3);                // Output: 30
+   ```
+
+   ``` 
+    let val4 = 5 + 6 * 2;                    // 17
+    let val5 = (5 + 6) * 2;                  // 22
+   ```
+
+In JS there is a *Math* object which can be used for various mathematical functions. Generally this function should be used if no rounding errors should occur. With `Math.random()` a random number is returned. Or `Math.sqrt(x)` which returns a square root of x.
+
+
+-------------------------------------------------------
+
+# 6. Conditional statements
+
+
+
 
