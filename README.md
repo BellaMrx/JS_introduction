@@ -287,39 +287,100 @@ JavaScript defines several data types.
 The type of a variable is returned with the *typeof* operator. Possible return values are *string*, *number*, *boolean*, *object*, *function*, *symbol* and *undefined*.
 
 
-## number -data type
+## data type *number*
 In JS, there is no difference between integers and floating point numbers. All data types for numbers are internally represented by JS as 64-bit floating point values.
    ```
-   let integerValue = 12345;
-   console.log (typeof integerValue);              // Output: number
-   let floatingPoint_Value = 123.456;
-   console.log (typeof floatingPoint_Value);       // Output: number
+    let integerValue = 12345;
+    console.log (typeof integerValue);              // Output: number
+    let floatingPoint_Value = 123.456;
+    console.log (typeof floatingPoint_Value);       // Output: number
    ```
 
 If a value does not correspond to a correct numerical value, *NaN (not a number)* is used as the value. If the value range has been exceeded or fallen below, *Infinity* or *-Infinity* is used as the value. Therefore there are two constants *Number.POSITIVE_INFINITY* and *Number.NEGATIVE_INFINITY*. If the smallest or largest possible number is to be determined, the constants *Number.MIN_VALUE* and *Number.MAX_VALUE* are used.
    ```
-   console.log (Number.MIN_VALUE);              // Output: 5e-324
-   console.log (Number.MAX_VALUE);              // Output: 1.7976931348623157e+308
-   console.log (Number.POSITIVE_INFINITY);      // Output: Infinity
-   console.log (Number.NEGATIVE_INFINITY);      // Output: -Infinity
+    console.log (Number.MIN_VALUE);              // Output: 5e-324
+    console.log (Number.MAX_VALUE);              // Output: 1.7976931348623157e+308
+    console.log (Number.POSITIVE_INFINITY);      // Output: Infinity
+    console.log (Number.NEGATIVE_INFINITY);      // Output: -Infinity
    ```
 
 When specifying floating point numbers, a period must be used instead of a comma. For higher or smaller floating point numbers, E-notation can be used. A specification of **5e-3** corresponds to **0.005**.
    ```
-   let floatingPoint_Value_1 = 5e-3;
-   console.log (typeof floatingPoint_Value_1);       // Output: 0.005
-   let floatingPoint_Value_2 = 1.2e4;
-   console.log (typeof floatingPoint_Value_2);       // Output: 12000
+    let floatingPoint_Value_1 = 5e-3;
+    console.log (typeof floatingPoint_Value_1);       // Output: 0.005
+    let floatingPoint_Value_2 = 1.2e4;
+    console.log (typeof floatingPoint_Value_2);       // Output: 12000
    ```
 
 
-## string data type
+## data type *string*
+*Strings* are used to represent text and consist of a string of 0 or more 16-bit characters. Such string literals can be inserted in JS by placing a text between single or double quotes.
+   ```
+    let text1 = "String in JS";
+    console.log (typeof text1);            // Output: string
+    let text2 = "Another string in JS";
+    console.log (typeof text2);            // Output: string
+    let text3 = "1234";
+    console.log (typeof text3);            // Output: string
+   ```
+
+Escape sequences are control characters that can be inserted in strings as variable values. Such control characters are introduced with \ followed by the letter marking the control character. 
+
+--> **Examples/Part_5/script.js**
+
+   ```
+    let text4 = "Insert a line break\n";      // Line break at the end
+    let text5 = "The text is output in the next line. \n";   
+    let text6 = "\tThe text will be indented.\n";
+    console.log (text4 + text5 + text6);
+   ```
+Output:
+
+ ![Preview](Images/Preview_5.PNG)
+
+The most important control characters
+
+| control character | meaning                                                    |
+|------------------ | -----------------------------------------------------------|
+| `\'`              | a single quote within the string                           |
+| `\"`              | double quotation mark within the string                    |
+| `\\`              | backslash character within the character string            |
+| `\n`              | line break in JS on console, for web pages `<br>` applies  |
+| `\t`              | tab character, one indent to the right                     |
+| `\uXXX`           | this adds a Unicode symbol                                 |
 
 
+Single strings are linked with the + operator:
+   ```
+    let text7 = "to be";
+    let text8 = "not";   
+    let text9 = text7 + "or" + text8 + text7;
+    console.log (text9);                       // Output: to be or not to be
+   ```
+
+When mixing numbers and strings with the + operator, the result will always be a string:
+   ``` 
+    let text10 = "The value is: " + 199,99 + 100;
+    console.log (text10);                       // Output: The value is 199,99100
+   ```
+
+### Template strings
+These are string symbols that may span multiple lines and also allow embedded JavaScript expressions. Such template strings are enclosed between two grave accents``` ` ```. This makes it possible to do without line breaks with `\n`:
+   ``` 
+    let text11 = "last line";
+    console.log("first line\n" + "second line\n" + text11);
+    // first line
+    // second line
+    // last line
+   ```
+the same:
+   ``` 
+    console.log(`first line
+    second line
+    ${text11}
+    `)
+   ```
 
 
-
-
-
-
+## data type *boolean*
 
