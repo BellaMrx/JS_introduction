@@ -485,7 +485,65 @@ In JS there is a *Math* object which can be used for various mathematical functi
 -------------------------------------------------------
 
 # 6. Conditional statements
+Conditional statements affect the flow of the program by defining a condition and then using it to decide at what point the program will continue.
 
+- `if` : is used to branch a block of statements that will be executed only if the condition in the `()` parenthesis is equal to `true`.
 
+- `else` : is used with a block of statements that will only be executed if the previously checked `if` condition is equal to `false`.
 
+- `else if` : is used with a block of statements to test another condition if the preceding `if` was equal to `false`. Multiple `else if` can be used after a preceding `if`. Alternatively, `switch()` can be used for such multiple branches.
+
+   ``` 
+    if (condition == true) {
+      // statement if condition equals true
+    } else  {
+      // statement if condition equals false
+    }
+   ```
+
+## `true` or `false`
+A boolean truth value in JS is specified as `true` or `false`, anything containing a true value equals `true` and anything without a true value equals `false`. But in JS you are not limited to `true` and `false`. There are also values that are considered false, such as `undefined`, `null`, `0` or `""`(falsy). `true` can also be objects (without properties), functions or arrays.
+
+- Real values so `true` are for example:
+   ``` 
+    1234
+    1.234
+    -1
+    "One text"
+    4 + 2 * 3
+   ```
+
+   ``` 
+    let mytext = 'One text';
+    if (mytext) {
+      console.log('"mytext" is a valid text.');       // Output
+    } esle {
+      console.log('"mytext" is an invalid text.');
+    }
+   ```
+
+ Since the `if` condition equals `true`, so `mytext` is a valid value, the corresponding output in the brackets of the `if` condition is executed.
+
+- No real values so `false` are for example:
+   ``` 
+    0             // The number 0
+    ""            // empty string
+    var val01;    // empty variable is undefined
+    var val02 = false;
+    60 / "text"   // NaN
+    null          // always false
+    NaN           // Not a number
+   ```
+
+   ``` 
+    let mytext = 'One text';
+    let val01 = 60;
+    if (val01 / mytext) {
+      console.log('Calculation successful');
+    } esle {
+      console.log('NaN -> no valid value');
+    }
+   ```
+
+ Here the statements are executed in the alternate `else` block because the `if` condition returns `false`.
 
