@@ -555,12 +555,12 @@ Besides `true` and `false`, variables and values can be compared with the differ
 |---------- | --------------------------------- | ------------------------------------ |
 | `==`      | equal to                          | `x == 5; // false`                   |	
 | `!=`      | not equal to                      | `x != 5; // true`                    |
-| `==`      | same value and same type          | `x === y; //false, x === 6; //true`  |
-| `!==`     | different value or different type | `x !== y; //true, x !== 6; //false`  |
+| `==`      | same value and same type          | `x === y; //false`, `x === 6; //true`  |
+| `!==`     | different value or different type | `x !== y; //true`, `x !== 6; //false`  |
 | `>`       | greater than                      | `x > y; //true`                      |
 | `<`       | less than                         | `x < y; //false`                     |
-| `>=`      | greater than or equal to          | `x >= y; //true, x >= 6; //false`    |
-| `<=`      | less than or equal to             | `x <= y; //false, x <= 6; //true`    |
+| `>=`      | greater than or equal to          | `x >= y; //true`, `x >= 6; //false`    |
+| `<=`      | less than or equal to             | `x <= y; //false`, `x <= 6; //true`    |
 
 The comparison operators `==` and `!==`. These are necessary because with comparison operators an implicit type conversion is performed before the comparison so that these values can be compared.
 
