@@ -517,7 +517,7 @@ A boolean truth value in JS is specified as `true` or `false`, anything containi
     let mytext = 'One text';
     if (mytext) {
       console.log('"mytext" is a valid text.');       // Output
-    } esle {
+    } else {
       console.log('"mytext" is an invalid text.');
     }
    ```
@@ -540,10 +540,58 @@ A boolean truth value in JS is specified as `true` or `false`, anything containi
     let val01 = 60;
     if (val01 / mytext) {
       console.log('Calculation successful');
-    } esle {
+    } else {
       console.log('NaN -> no valid value');
     }
    ```
 
  Here the statements are executed in the alternate `else` block because the `if` condition returns `false`.
+
+
+## Comparison operators
+Besides `true` and `false`, variables and values can be compared with the different comparison operators to check if they are true or false.
+
+| Operator  | Description                       | Example (x=6; y=5)                   |
+|---------- | --------------------------------- | ------------------------------------ |
+| `==`      | equal to                          | `x == 5; // false`                   |	
+| `!=`      | not equal to                      | `x != 5; // true`                    |
+| `==`      | same value and same type          | `x === y; //false, x === 6; //true`  |
+| `!==`     | different value or different type | `x !== y; //true, x !== 6; //false`  |
+| `>`       | greater than                      | `x > y; //true`                      |
+| `<`       | less than                         | `x < y; //false`                     |
+| `>=`      | greater than or equal to          | `x >= y; //true, x >= 6; //false`    |
+| `<=`      | less than or equal to             | `x <= y; //false, x <= 6; //true`    |
+
+The comparison operators `==` and `!==`. These are necessary because with comparison operators an implicit type conversion is performed before the comparison so that these values can be compared.
+
+## Use `if` branches
+--> **Examples/Part_6/script.js**
+
+   ``` 
+    let age = prompt('How old are you');
+    if (age >= 18) {
+      console.log('Access allowed');
+    } else {
+      console.log('Access denied');
+    }
+   ```
+If the age is 18 or higher, access is granted, if not then no access.
+
+   ``` 
+    let strVal = "1234";
+    let iVal = 1234;
+    if (strVal == iVal) {                    // true, because type conversion
+      console.log("Both values are equal");     
+    } else {
+      console.log('Values are different');
+    }
+   ```
+Due to the type conversion `true` is returned. If `==` is replaced by `===`, `true` is no longer returned because the value is the same but the type is not.
+
+
+## Use selection operator
+
+
+
+
 
