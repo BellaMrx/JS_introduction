@@ -656,6 +656,6 @@ Using the logical AND, here the expressions (whether the entered value `val` is 
 If the logical OR operator had been used instead, `true` would always be returned (if the entered value is greater than or equal to 1), because the second expression would not have been checked at all. But if the value is negative or 0, the OR operator will also evaluate the second expression. If the logical OR operator is used, the check is aborted at the first `true`, because the condition is that at least one operator is true.
 
 
-## Multiple branching with 'switch`
+## Multiple branching with `switch`
 
 
