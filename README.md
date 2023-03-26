@@ -590,8 +590,72 @@ Due to the type conversion `true` is returned. If `==` is replaced by `===`, `tr
 
 
 ## Use selection operator
+An `if-else` construct can be shortened with the so-called selection operator. The structure is as follows:
+   ``` 
+    let val = condition ? value1 : value2;
+   ```
+means the same as: 
+
+   ``` 
+    let val;
+    if (condition) {
+      val = value1;
+    } else {
+      val = value2;
+    }
+   ```
+Here the value `value1` is assigned to the variable `val` if `condition` is equal to `true`. If `condition` is equal to `false`, the `value2` is assigned to `val`.
+
+another example:
+
+   ``` 
+    let pwd = prompt ('Enter password: ');
+    let isAdmin = pwd == 123456789 ? true : false;
+    console.log(isAdmin);
+   ```
+Here with `prompt()` a pseudo-password is queried and assigned to the variable `isAdmin` according to the input `true` or `false`.
 
 
+## Logical operators
+The logical operators in JS are `&&`(AND), `||` (OR) and `!` (NOT). Logical operators are used with truth values. If you use numbers, they are implicitly converted to a truth value before they are linked with `&&`, `||` or `!`.
 
+- `&&`
+   Expressions linked with the AND operator return `true` only if all expressions are true: 
+   ``` 
+    if (ival1 > 0 && ival2 > 0) {
+      // Both expressions are true
+    }
+   ```
+
+- `||`
+	Expressions concatenated with the logical OR operator return `true` if at least one of the expressions is true:
+   ``` 
+    if (ival1 > 0 || ival2 > 0) {
+      // At least one expression is true
+    }
+   ```
+
+- `!`
+	The logical NOT operator is used to negate an expression. From `true` can be made `false` and reverse:
+   ``` 
+    if (!(ival > 0)) {
+      console.log("ival is not greater than 0")
+    }
+   ``` 
+
+example:
+   ``` 
+    let val = prompt('Enter a value from 1 - 100: ');
+    if (val >= 1 && <= 100) {
+      console.log("The value meets the requirements.")
+    } else {
+      console.log("Incorrect input: + val");
+    }
+   ```
+Using the logical AND, here the expressions (whether the entered value `val` is equal to or greater than 1 AND equal to or less than 100) have been linked, and only `true` is returned if both expressions are `true`.
+If the logical OR operator had been used instead, `true` would always be returned (if the entered value is greater than or equal to 1), because the second expression would not have been checked at all. But if the value is negative or 0, the OR operator will also evaluate the second expression. If the logical OR operator is used, the check is aborted at the first `true`, because the condition is that at least one operator is true.
+
+
+## Multiple branching with 'switch`
 
 
