@@ -619,24 +619,21 @@ Here with `prompt()` a pseudo-password is queried and assigned to the variable `
 ## Logical operators
 The logical operators in JS are `&&`(AND), `||` (OR) and `!` (NOT). Logical operators are used with truth values. If you use numbers, they are implicitly converted to a truth value before they are linked with `&&`, `||` or `!`.
 
-- `&&`
-   Expressions linked with the AND operator return `true` only if all expressions are true: 
+- `&&` : Expressions linked with the AND operator return `true` only if all expressions are true: 
    ``` 
     if (ival1 > 0 && ival2 > 0) {
       // Both expressions are true
     }
    ```
 
-- `||`
-	Expressions concatenated with the logical OR operator return `true` if at least one of the expressions is true:
+- `||` : Expressions concatenated with the logical OR operator return `true` if at least one of the expressions is true:
    ``` 
     if (ival1 > 0 || ival2 > 0) {
       // At least one expression is true
     }
    ```
 
-- `!`
-	The logical NOT operator is used to negate an expression. From `true` can be made `false` and reverse:
+- `!` : The logical NOT operator is used to negate an expression. From `true` can be made `false` and reverse:
    ``` 
     if (!(ival > 0)) {
       console.log("ival is not greater than 0")
