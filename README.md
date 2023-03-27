@@ -753,5 +753,87 @@ All three expressions in the `for` loop are optional and can be omitted. In any 
 
 
 ## `while` loop
+The `while` loop is a header driven loop and will be executed as long as the condition in `while` returns `true`.
+
+   ``` 
+    while(condition) {
+      // Statement block that will be executed
+    }
+   ```
+
+example:
+
+   ``` 
+    let i = 0;                   // Initialize counter variable
+    while(i < 3) {               // Check condition
+      console.log(i + 1 + "-th loop pass");
+      i++;                       // Increase counter variable
+    }
+   ```
+
+
+## `do-while` loop
+The `do-while` loop is a foot-controlled loop, which means that the condition is not checked until the end, when the statement block has been executed. Thus, in the `do-while` loop, the statement block of the loop is executed at least once before the condition is checked.
+
+   ``` 
+    do {
+      // Statement block that will be executed
+    } while(condition);
+   ```
+
+example:
+
+   ``` 
+    let i = 0;
+    do { 
+      console.log(i + 1 + "-th loop pass");
+      i++;
+    } while(i < 3);
+   ```
+
+
+## End statement block with `break
+A statement that may be useful in a loop is the `break` statement. If a simple `break` is used within a statement block of the loop, it will jump out of the loop execution and the script will continue behind the loop.
+
+   ``` 
+    let i = 0;
+    while(i < 8) {
+      console.log(i + 1 + "-th loop pass");
+      i++;
+      if (i === 4) {
+         console.log("End loop with break");
+         break;
+      }
+    }
+   ```
+
+Actually, this loop should be run through 8 times in `while`. However, this loop is only run through 4 times, because then the if-condition `i === 4` returns `true` and thus the `break` statement ensures that the loop is ended prematurely.
+
+
+## Jump to loop start with `continue`
+With `continue` a loop pass can be terminated and then jump back to the loop start. This is helpful if due to a condition the further loop pass should not be executed.
+
+   ``` 
+    let i = 0;
+    while(i < 10) {
+      i++;
+      if (i % 2 === 1) {
+         continue;
+      }
+      console.log("Value divisible by 2: " + 1);
+    }
+   ```
+
+In the example, a loop is incremented from 1 to 10 and passed through. At each loop pass it is checked whether the value of `i % 2` results in a remainder. If the condition is `ture`, `continue` jumps back to the beginning of the loop. If the condition is `false`, it is a number divisible by two or an even value, and the number is output.
+
+
+---------------------------------------------------------------------
+Thanks for reading. I hope you enjoyed it or at least learned something.
+
+On my Twitter account @bella_mrx you can find more useful stuff about HTML and web development.
+
+Or check out my GitHub profile.
+
+
 
 
