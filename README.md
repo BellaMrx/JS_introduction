@@ -828,12 +828,13 @@ In the example, a loop is incremented from 1 to 10 and passed through. At each l
 
 
 ---------------------------------------------------------------------
-Thanks for reading. I hope you enjoyed it or at least learned something.
 
-On my Twitter account @bella_mrx you can find more useful stuff about HTML and web development.
+On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 
 
-Or check out my GitHub profile.
+Or check out my [GitHub](https://github.com/BellaMrx) profile.
 
+Thanks for reading. 
+I hope you enjoyed it or at least learned something.
 
 
 
