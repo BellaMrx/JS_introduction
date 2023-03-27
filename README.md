@@ -11,6 +11,7 @@
  4. Overview of JavaScript data types
  5. Arithmetic operators for calculation
  6. Conditional statements
+ 7. Loops - repeat program instructions several times
 
 
 ---------------------------------------------
@@ -654,5 +655,103 @@ If the logical OR operator had been used instead, `true` would always be returne
 
 
 ## Multiple branching with `switch`
+If several conditions are to be checked, theoretically several `if` queries can be used one after the other. Or you can use the `switch` case distinction. In JS, `switch` supports values with arbitrary types. It is also possible to have values determined dynamically first via function calls.
+
+   ``` 
+    switch(expression) {
+      case label_1:
+         statement;
+         [break];
+      case label_2:
+         statement;
+         [break];
+    ...
+      default:
+         statement;
+    }
+   ```
+
+With this case distinction, a matching value in `case` is searched for the expression in `switch`. If a `case` marker matches the `switch` evaluation, the program execution is executed after this `case` marker. If no `case` marker matches the `switch` evaluation, an optional `default` marker can be used, which will be executed as an alternative. Of particular importance in a `switch` case distinction are the `break` statements at the end of a `case` mark. `break` is used to instruct the program to jump out of the `switch` block and continue with the program execution after it. If no `break` statement is used, all further statements in the `switch` block are executed until the next `break` statement or until the end of the block.
+
+   ``` 
+    switch(new Date().getDay()) {
+      case 0:
+         console.log("Today is Sunday")
+         break;
+      case 6:
+         console.log("Today is Saturday")
+         break;
+      default:
+         console.log("Today is a weekday")
+    }
+   ```
+
+Here in `switch` a `Date` object is created and with it the method `getDay()` is called. The method `getDay()` returns a weekday in the form of a number. 0 is returned for Sunday, 1 for Monday etc to 6 for Saturday. In the example the return value is compared with the `case` marks 0 and 6. If one of the marks matches, a corresponding output is returned in the JavaScript console. If none of the `case` marks match, the return value is 1,2,3,4,5 and it is a normal weekday, so no `case` marks are used here anymore, but `default`.
+
+
+------------------------------------------
+
+# 7. Loops - repeat program instructions several times
+Loops are good for repeating certain statements multiple times. JS supports several types of loops:
+
+## Increment and decrement operator
+Here the value of a variable is increased or decreased by 1. Mainly these two operators are used with loops.
+
+| Operator | Meaning                                           |
+| -------- | ------------------------------------------------- |
+| `++`     | Increment operator; variable is incremented by 1  |
+| `--`     | Decrement operator; variable is decreased by 1    |
+
+There are two options for use in each case:
+
+| Using       | Meaning                                           |
+| ----------- | ------------------------------------------------- |
+| `val++`     | Postfix notation; increments the old value of `val`, still passes the old value to the current expression |
+| `++val`     | Prefix notation; increments the old value of `val` and passes it immediately to the current expression  |
+| `val--`     | Postfix notation; reduces the value of `val`, still passes the old value to the current expression |
+| `--val`     | Prefix notation; reduces the value of `val` and passes it immediately to the current expression |
+
+
+   ``` 
+    let iVal = 1;
+    console.log("iVal = " + iVal);          // Output: iVal = 1
+    ival++;
+    console.log("iVal = " + iVal);          // Output: iVal = 2
+    console.log("iVal = " + iVal++);        // Output: iVal = 2
+    console.log("iVal = " + iVal);          // Output: iVal = 3
+    console.log("iVal = " + ++iVal);        // Output: iVal = 4
+   ```
+
+
+## `for` loop
+The flexible `for` loop is probably the most commonly used loop.
+   ``` 
+    for(Initialization; condition; increment/decrement) {
+      // Statement block that will be executed
+    }
+   ```
+
+Initalization is executed only once when the loop is started and is usually used to set a counter variable for the loop. As long as the condition equals `true`, the loop is executed again. If `false`, the loop is terminated and program execution continues after the statement block of the `for` loop. As a condition it is often checked whether the counter variable corresponds to a certain value. Increment/Decrement is always executed when the statement in the statement block have been executed.
+
+   ``` 
+    for(let i = 0; i < 3; i++) {
+      console.log(i + 1 + "-th loop pass");
+    }
+   ```
+
+Output to the console: 
+
+   ``` 
+    1st loop pass
+    2nd loop pass
+    3rd loop pass
+   ```
+
+Here the statement was executed three times in the loop. The count variable `i` was first set to `0`, the condition `i<3` was checked and then the statement block behind it was executed. The output in the JS console shows how many times the loop has been executed. Next,the loop variable is incremented by 1 with `i++` and the condition `i < 3` is checked again, which (i = 1) is still `true`. The process is repeated until the of `i` equals 3 and thus the condition `i < 3` returns `false`.
+
+All three expressions in the `for` loop are optional and can be omitted. In any case, the two semicolons in the `for` loop must be used. Theoretically, `for(;;)` would be a valid `for` loop. However, an infinite loop is created if the second expression is omitted, which can cause the browser to crash. If such an infinite loop is used, a `break` should be used inside this loop.
+
+
+## `while` loop
 
 
