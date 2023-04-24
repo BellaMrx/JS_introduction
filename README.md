@@ -556,7 +556,7 @@ Besides `true` and `false`, variables and values can be compared with the differ
 |---------- | --------------------------------- | ------------------------------------ |
 | `==`      | equal to                          | `x == 5; // false`                   |	
 | `!=`      | not equal to                      | `x != 5; // true`                    |
-| `==`      | same value and same type          | `x === y; //false`, `x === 6; //true`  |
+| `===`      | same value and same type          | `x === y; //false`, `x === 6; //true`  |
 | `!==`     | different value or different type | `x !== y; //true`, `x !== 6; //false`  |
 | `>`       | greater than                      | `x > y; //true`                      |
 | `<`       | less than                         | `x < y; //false`                     |
