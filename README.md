@@ -824,7 +824,7 @@ With `continue` a loop pass can be terminated and then jump back to the loop sta
     }
    ```
 
-In the example, a loop is incremented from 1 to 10 and passed through. At each loop pass it is checked whether the value of `i % 2` results in a remainder. If the condition is `ture`, `continue` jumps back to the beginning of the loop. If the condition is `false`, it is a number divisible by two or an even value, and the number is output.
+In the example, a loop is incremented from 1 to 10 and passed through. At each loop pass it is checked whether the value of `i % 2` results in a remainder. If the condition is `true`, `continue` jumps back to the beginning of the loop. If the condition is `false`, it is a number divisible by two or an even value, and the number is output.
 
 
 ---------------------------------------------------------------------
