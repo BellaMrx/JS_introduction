@@ -792,7 +792,7 @@ example:
    ```
 
 
-## End statement block with `break
+## End statement block with `break`
 A statement that may be useful in a loop is the `break` statement. If a simple `break` is used within a statement block of the loop, it will jump out of the loop execution and the script will continue behind the loop.
 
    ``` 
