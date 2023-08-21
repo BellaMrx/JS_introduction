@@ -32,7 +32,8 @@
 If neither `async` or `defer` is present: The script is downloaded and executed immediately, blocking parsing until the script is completed.
 
 - If the user has JavaScript disabled, or the web browser does not support JavaScript, a special hint can be given to the user with `<noscript>...</noscript>`.
-    
+
+ [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_1/index.html) --> **Examples/Part_1/...** 
    ```
     <script src="js/hello.js" defer></script>
     <noscript>
@@ -42,14 +43,14 @@ If neither `async` or `defer` is present: The script is downloaded and executed 
         in your browser.
     </noscript>
    ```
- [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_1/index.html) --> **Examples/Part_1/...**
 
 --------------------------------------------
 
 # 2. Output from JavaScript
 ## Standard dialogs
 - `alert()`, the function outputs the text passed between the brackets in a hint dialog.
-    
+
+ [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_1/js/hello.js) --> **Examples/Part_1/...** 
    ```
     function showHallo() {
         alert('Hello JavaScript!');
@@ -57,7 +58,6 @@ If neither `async` or `defer` is present: The script is downloaded and executed 
 
     showHallo();
    ```
- [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_1/js/hello.js) --> **Examples/Part_1/...**
 
  ![Preview](Images/alert.JPG)
 
@@ -65,7 +65,7 @@ If neither `async` or `defer` is present: The script is downloaded and executed 
 
 - `prompt()`, is the dialog for entering text.
 
-    
+ [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_2/js/demo.js) --> **Examples/Part_2/...**   
    ```
     function showConfirm() {
         confirm('Please confirm the process!');
@@ -82,7 +82,6 @@ If neither `async` or `defer` is present: The script is downloaded and executed 
     showConfirm();
     showPrompt();
    ```
- [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_2/js/demo.js) --> **Examples/Part_2/...**
 
 confirm()
 
@@ -99,14 +98,14 @@ These standard dialogs are rarely used in practice, it depends on the layout and
 
 ## Output to the console
 With `log()`, a method of the `console` object, a simple console output can be generated. However, such a log output in the console is not intended for the user, but for the developer, in order to trace the sequence of individual program sections or to find errors.
-    
+
+ [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_3/js/helloConsole.js) --> **Examples/Part_3/...**   
    ```
     function showConsole() {
         console.log('Hello JavaScript-Console!');
     }
     showConsole();
    ```
- [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_3/js/helloConsole.js) --> **Examples/Part_3/...**
 
 in the web browser:
 
@@ -132,7 +131,8 @@ However, the output via the `console` object should only be used during developm
 
 ## Output to the website
 The output with standard dialogs is not very nice and the output via `consol.log` is only for developers. So for the user of the website a different output has to be created. That's where the HTML elements and attributes come into play, so a classic input/output can be done directly in a text field up to a DOM manipulation to create an output (where the web page or parts of it are changed dynamically at runtime).
-    
+
+ [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_4/js/pushButton.js) --> **Examples/Part_4/...**    
    ```
     let counter = 1;
 
@@ -142,7 +142,6 @@ The output with standard dialogs is not very nice and the output via `consol.log
         counter++;
     }
    ```
- [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_4/js/pushButton.js) --> **Examples/Part_4/...**
 
 Once the `button` has been pressed, a `click` event is fired, whereupon `onClick="changeText()"` executes the JavaScript with the `changeText()` function. The function changes the content of the first `p` element found and replaces the text in between with `"The button has been pressed! (1x)"`, increasing the value of `counter` by 1 after each new confirmation.
 
@@ -326,13 +325,13 @@ When specifying floating point numbers, a period must be used instead of a comma
 
 Escape sequences are control characters that can be inserted in strings as variable values. Such control characters are introduced with \ followed by the letter marking the control character. 
 
+ [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_5/script.js) --> **Examples/Part_5/...**
    ```
     let text4 = "Insert a line break\n";      // Line break at the end
     let text5 = "The text is output in the next line. \n";   
     let text6 = "\tThe text will be indented.\n";
     console.log (text4 + text5 + text6);
    ```
- [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_5/script.js) --> **Examples/Part_5/...**
 
 Output:
 
@@ -564,6 +563,7 @@ The comparison operators `==` and `!==`. These are necessary because with compar
 
 ## Use `if` branches
 
+ [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_6/script.js) --> **Examples/Part_6/...**
    ``` 
     let age = prompt('How old are you');
     if (age >= 18) {
@@ -572,7 +572,6 @@ The comparison operators `==` and `!==`. These are necessary because with compar
       console.log('Access denied');
     }
    ```
- [Complete Code](https://github.com/BellaMrx/JS_introduction/blob/main/Examples/Part_6/script.js) --> **Examples/Part_6/...**
 
 If the age is 18 or higher, access is granted, if not then no access.
 
