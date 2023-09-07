@@ -826,7 +826,7 @@ In the example, a loop is incremented from 1 to 10 and passed through. At each l
 
 ---------------------------------------------------------------------
 
-On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 
+On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about JavaScript and web development. 
 
 Or check out my [GitHub](https://github.com/BellaMrx) profile.
 
