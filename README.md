@@ -1,6 +1,6 @@
 # JS Introduction
 
- templates and descriptions
+An introduction to JavaScript
 
 ---------------------------------------------
 
@@ -824,14 +824,28 @@ With `continue` a loop pass can be terminated and then jump back to the loop sta
 In the example, a loop is incremented from 1 to 10 and passed through. At each loop pass it is checked whether the value of `i % 2` results in a remainder. If the condition is `true`, `continue` jumps back to the beginning of the loop. If the condition is `false`, it is a number divisible by two or an even value, and the number is output.
 
 
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+## The end
+This is only an introduction to JavaScript, there is much more to know about it. But this is already one of the most important things in JavaScript that everyone should know. 
 
-On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about JavaScript and web development. 
+If you don't know HTML, CSS or JavaScript yet, have a look here:
+  - [WebDevelopment Basics](https://github.com/BellaMrx/WebDevelopment_Basics) - Basics Guide for web developers
+  - [HTML Guide](https://github.com/BellaMrx/HTML_Guide) - Detailed guide about HTML5 (all basics for HTML)
+  - [HTML Cheat Sheets](https://github.com/BellaMrx/HTML_Cheat_Sheets) - All HTML5 elements and their attributes
+  - [CSS Guide](https://github.com/BellaMrx/CSS_Guide) - Detailed guide about CSS (Introduction to CSS, CSS Selectors, Inheritance and the cascade, CSS Box Model, CSS Positioning, Flexbox, Responsive Web Design, CSS Grid Layout, Styling with CSS, Testing and Organizing) 
+  - [Sass and SCSS Basic Guide](https://github.com/BellaMrx/Sass_and_SCSS) - An introduction to the CSS preprocessor Sass
 
-Or check out my [GitHub](https://github.com/BellaMrx) profile.
+  **JavaScript Basics:**
 
-Thanks for reading. 
-I hope you enjoyed it or at least learned something.
+  1. You are here --> [JS Introduction](https://github.com/BellaMrx/JS_introduction) - An introduction to JavaScript  
+  2. [Arrays, functions, objects in JS](https://github.com/BellaMrx/Arrays_functions_objects_in_JS) - Introduction: Arrays, functions and objects in JavaScript
+  3. [DOM - Document Object Model](https://github.com/BellaMrx/DOM_Document-Object-Model) -  Introduction to the **DOM** and the **DOM** manipulation - Change web pages dynamically     
+
+Or just visit my GitHub profile, you can find all guides/tutorials there [BellaMrx](https://github.com/BellaMrx)
+
+Thanks for the attention.
+
+#### This is the end, beautiful friend... ;)
 
 
 
