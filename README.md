@@ -364,7 +364,7 @@ When mixing numbers and strings with the + operator, the result will always be a
    ```
 
 ### Template strings
-These are string symbols that may span multiple lines and also allow embedded JavaScript expressions. Such template strings are enclosed between two grave accents``` ` ```. This makes it possible to do without line breaks with `\n`:
+These are string symbols that may span multiple lines and also allow embedded JavaScript expressions. Such template strings are enclosed between two grave accents. This makes it possible to do without line breaks with `\n`:
    ``` 
     let text11 = "last line";
     console.log("first line\n" + "second line\n" + text11);
@@ -557,7 +557,7 @@ Besides `true` and `false`, variables and values can be compared with the differ
 | `>`       | greater than                      | `x > y; //true`                      |
 | `<`       | less than                         | `x < y; //false`                     |
 | `>=`      | greater than or equal to          | `x >= y; //true`, `x >= 6; //false`    |
-| `<=`      | less than or equal to             | `x <= y; //false`, `x <= 6; //true`    |
+| `<=`      | greater than or equal to             | `x <= y; //false`, `x <= 6; //true`    |
 
 The comparison operators `==` and `!==`. These are necessary because with comparison operators an implicit type conversion is performed before the comparison so that these values can be compared.
 
