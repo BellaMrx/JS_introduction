@@ -204,7 +204,7 @@ Without single or double quotation marks, it is a numeric value:
    ```
     let price = 10;                     // Number
     let pi = 3.14;                      // Number
-    let textNum = "1234";                    // Caution! This is a string
+    let textNum = "1234";               // Caution! This is a string
    ```
 
 ## Initalize and assign values
