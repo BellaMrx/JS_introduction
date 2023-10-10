@@ -17,7 +17,7 @@ An introduction to JavaScript
 ---------------------------------------------
 
 # 1. `async` and `defer` - attributes to control the loading behavior of JavaScript
-- With `async` the download of the JavaScript file takes place ansynchronously, so that the processing of the HTML code is not paused. This executes the JavaScript code directly once it is downloaded. Suitable only for scripts that work independently of the HTML document.
+- With `async` the download of the JavaScript file takes place asynchronously, so that the processing of the HTML code is not paused. This executes the JavaScript code directly once it is downloaded. Suitable only for scripts that work independently of the HTML document.
 
     ```
     <script src="script.js" async></script>
@@ -728,7 +728,7 @@ The flexible `for` loop is probably the most commonly used loop.
     }
    ```
 
-Initalization is executed only once when the loop is started and is usually used to set a counter variable for the loop. As long as the condition equals `true`, the loop is executed again. If `false`, the loop is terminated and program execution continues after the statement block of the `for` loop. As a condition it is often checked whether the counter variable corresponds to a certain value. Increment/Decrement is always executed when the statement in the statement block have been executed.
+Initialization is executed only once when the loop is started and is usually used to set a counter variable for the loop. As long as the condition equals `true`, the loop is executed again. If `false`, the loop is terminated and program execution continues after the statement block of the `for` loop. As a condition it is often checked whether the counter variable corresponds to a certain value. Increment/Decrement is always executed when the statement in the statement block have been executed.
 
    ``` 
     for(let i = 0; i < 3; i++) {
