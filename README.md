@@ -416,7 +416,7 @@ With the data type *null*, on the other hand, an empty object is represented:
     console.log(name);     // Output: null
    ```
 
-The data type *null* is a keyword. The type *null* was listed as a data type, but a *typeof null* returns the type *object*. Variables that are initalized with *null* are *object* types. A variable that is not initalized, on the other hand, is *undefined*. The value *undefined* simply indicates that a variable has not yet been initialized with a value. *null*, on the other hand, is an empty object.
+The data type *null* is a keyword. The type *null* was listed as a data type, but a *typeof null* returns the type *object*. Variables that are initialized with *null* are *object* types. A variable that is not initialized, on the other hand, is *undefined*. The value *undefined* simply indicates that a variable has not yet been initialized with a value. *null*, on the other hand, is an empty object.
 
 
 ## Data type *object*
