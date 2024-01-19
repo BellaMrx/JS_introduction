@@ -607,7 +607,7 @@ Here the value `value1` is assigned to the variable `val` if `condition` is equa
 another example:
 
    ``` 
-    let pwd = prompt ('Enter password: ');
+    let pwd = prompt('Enter password: ');
     let isAdmin = pwd == 123456789 ? true : false;
     console.log(isAdmin);
    ```
